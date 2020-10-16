@@ -15,7 +15,10 @@ int main(int argc, char* argv[]) {
 
 	int input = atoi(argv[1]);
 	if(input<0)
-		printf("Input %d is a negative number\n", input);
+	{
+		int pos = -input;
+		printf("Sqrt of %d is %fi\n", input, sqrt(pos));
+	}
 	else
 		printf("Sqrt of %d is %f\n",input,sqrt(input));
 	printf("End of program. Exiting.");
